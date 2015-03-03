@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def evaluate():
-    code = urldecode(request.query_string)
+    code = urldecode(request.query_string.decode('utf-8'))
 
     result = evaluator.run(code)
     if not result.strip():
