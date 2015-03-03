@@ -1,3 +1,4 @@
+from urllib.parse import unquote as urldecode
 from flask import Flask, request, make_response
 import evaluator
 
@@ -5,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def evaluate():
-    code = request.query_string
+    code = urldecode(request.query_string)
 
     result = evaluator.run(code)
     if not result.strip():
