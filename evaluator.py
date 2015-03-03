@@ -13,6 +13,7 @@ import glob
 import gzip
 import hashlib
 import html
+import icu
 import io
 import itertools
 import lxml.etree
