@@ -6,4 +6,3 @@ feedparser==5.1.3
 requests==2.5.3
 chardet==2.3.0
 pytz
-PyICU==1.8
