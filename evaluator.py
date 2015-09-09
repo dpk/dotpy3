@@ -34,7 +34,8 @@ import sys
 import textwrap
 import time
 import unicodedata
-import urllib
+import urllib.parse
+import urllib.request
 import xml
 import zlib
 import lxml.etree as etree
